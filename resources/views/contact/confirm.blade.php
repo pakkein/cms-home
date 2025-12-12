@@ -71,7 +71,8 @@
                 <p class="dataContentItemP">お問い合わせ:</p>			
             </div>			
             <form action="{{ route('contact.send') }}" method="GET">
-                <button type="submit" class="submitButton">送信する</button>
+            @csrf    
+            <button type="submit" class="submitButton">送信する</button>
             </form>
             <button type="button" class="submitButton" onclick="history.back()">戻る</button>
         </div>

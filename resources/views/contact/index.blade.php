@@ -5,7 +5,8 @@
     <section class="contact">							
         <div class="contactMainBox">							
           <form action="{{ route('contact.confirm') }}" method="GET">							
-                <div class="contactItem">							
+          @csrf      
+          <div class="contactItem">							
                     <div class="textItem">							
                        <span class="required">必須</span>							
                        <label class="" for="company">会社名</label>							
