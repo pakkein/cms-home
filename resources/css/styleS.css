@@ -66,6 +66,7 @@
     font-weight: bold;
     font-size: 1.1rem;
     text-align: center;
+    
 }
 
 .dateInput {
@@ -87,7 +88,24 @@
     display: block;
     margin-top: 5px;
 }
-			
+
+.dataContentItemP{
+    padding: 20px 10px;
+    width: 40%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.sendMassageText{
+  border-top: 1px #eaedf2 solid;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    color: green;  
+    background-color: lightblue;
+    font-size: 1rem;
+    font-weight: bold;
+}
 			
 /* 
  *お問い合わせ 
