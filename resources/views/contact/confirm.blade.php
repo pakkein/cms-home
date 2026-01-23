@@ -1,7 +1,7 @@
 @extends('layouts.user_base')			
 @section('title', '内容確認')			
 @section('content')			
-			
+
     <section class="confirm">			
         <div class="contactMainBox">			
             <div class="dataContentItem">			

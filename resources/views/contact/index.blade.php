@@ -1,4 +1,4 @@
-<div>
+
 @extends('layouts.user_base') 							
 @section('title', 'お問い合わせ')							
 @section('content')							
@@ -60,7 +60,7 @@
 			<label class=""for="birthday">生年月日</label>				
          </div>					
 		<div class="inputltem">					              
-            <input type="data" id="birthday" name="birthday"  value="{{ old('birthday') }}" class="dataInput" placeholder="年　/月/日　　　📅">										
+            <input type="date" id="birthday" name="birthday"  value="{{ old('birthday') }}" class="dataInput" placeholder="年　/月/日　　　📅">										
         @error('birthday')
             <span class="errorMessage">{{ $message }}</span> 
         @enderror
@@ -102,7 +102,7 @@
                         <label class="label" for="contact">お問い合わせ内容</label>
                     </div>
                     <div class="inputItem">
-                        <textarea id="contact" name="contact" class="contactText"></textarea>
+                        <textarea id="contact" name="contact" class="contactText">{{old('contact')}}</textarea>
                     @error('contact')
                         <span class="errorMessage">{{ $message }}</span>
                     @enderror
@@ -116,4 +116,4 @@
 @section('title', 'お問い合わせ')							
 @section('content')							
 @endsection								
-</div>
+

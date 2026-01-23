@@ -2,8 +2,8 @@
 
 namespace App\http\Controllers;
 
-use App\http\Controllers\Controller;
-use Illuminate\http\request;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\request;
 
 class ContactController extends Controller
 {
@@ -13,6 +13,7 @@ public function index()
 }
 public function confirm(Request $REQUEST)
 {
+    dd($REQUEST->all());
     $validated=$REQUEST->validate([
     'company'=>'required|string|max:20',
      'name'=>'required|string|max:20',
@@ -23,6 +24,7 @@ public function confirm(Request $REQUEST)
      'job'=>'required',
      'contact'=>'required|string',
     ]);
+   
     return view('contact.confirm',compact('validated'));
 }
 public function send()
